@@ -1,0 +1,48 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.body {
+    width: 800px;
+    height: 300px;
+    background-color: darksalmon;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Swash;
+    src: url(Swash.ttf);
+}
+
+h1 {
+    font-family: Swash;
+    font-size: 60px;
+}
+
+input {
+    font-family: Overlock;
+    font-size: 20px;
+    padding-left: 15px;
+    border-radius: 27px;
+    height: 40px;
+    width: 300px;
+}
+
+button {
+    font-family: Overlock;
+    font-size: 20px;
+    padding-left: 5px;
+    border-radius: 27px;
+    height: 40px;
+    width: 75px;
+    background-color: rgb(255, 204, 187);
+}
+
+p {
+    font-family: Overlock;
+}
