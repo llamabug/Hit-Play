@@ -1,17 +1,49 @@
 body {
-    background-color: white;
+    background: #6e1296;
+    background: linear-gradient(24deg,
+        rgba(110, 18, 150, 1)0%,
+        rgba(29, 110, 153, 1) 50%,
+        rgba(9, 158, 32, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    flex-direction: column;
 }
+
+.carouselDiv {
+    width: 800px;
+    height: 60px;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, 
+        transparent, 
+        black 20%, 
+        black 80%, 
+        transparent
+    );
+}
+
+.carousel {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: carousel 10s linear infinite;
+}
+
+@keyframes carousel {
+    0% { transform: translate(0, 0) }
+    100% { transform: translate(-50%, 0) }
+}
+
 
 .body {
     width: 800px;
-    height: 300px;
-    background-color: darksalmon;
+    height: 400px;
+    background-color: white;
+    opacity: 0.7;
     text-align: center;
+    border-radius: 20px;
 }
 
 @font-face {
@@ -22,6 +54,12 @@ body {
 h1 {
     font-family: Swash;
     font-size: 60px;
+}
+
+h2 {
+    font-size: 24px;
+    color: black;
+    display: inline-block;
 }
 
 input {
@@ -40,7 +78,8 @@ button {
     border-radius: 27px;
     height: 40px;
     width: 75px;
-    background-color: rgb(255, 204, 187);
+    background-color: white;
+    border: none;
 }
 
 p {
