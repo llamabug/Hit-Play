@@ -8,31 +8,6 @@ body {
     flex-direction: column;
 }
 
-.carouselDiv {
-    width: 800px;
-    height: 60px;
-    overflow: hidden;
-    mask-image: linear-gradient(to right, 
-        transparent, 
-        black 20%, 
-        black 80%, 
-        transparent
-    );
-}
-
-.carousel {
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    animation: carousel 10s linear infinite;
-}
-
-@keyframes carousel {
-    0% { transform: translate(0, 0) }
-    100% { transform: translate(-50%, 0) }
-}
-
-
 .body {
     width: 800px;
     height: 400px;
@@ -42,18 +17,93 @@ body {
     border-radius: 20px;
 }
 
+.carouselDiv {
+    width: 800px;
+    height: 60px;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 20%,
+        black 80%,
+        transparent
+    );
+}
+
+.carousel {
+    white-space: nowrap;
+    display: inline-block;
+    animation: carousel 10s linear infinite;
+}
+
+@keyframes carousel {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-50%, 0); }
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 30px;
+    gap: 15px;
+}
+
+.bar input {
+    width: 500px;
+    height: 60px;
+    box-sizing: border-box;
+
+    border: 3px solid rgb(201, 207, 210);
+    border-radius: 40px;
+    background: transparent;
+
+    padding: 0 20px; 
+
+    font-family: Overlock;
+    font-size: 24px;
+}
+
+.searchB {
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.searchB img {
+    width: 30px;
+    height: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
 .page {
     width: 1000px;
-    height: 600px;
-    background-color: white;
+    height: 640px;
     text-align: center;
+
     background: linear-gradient(white, white) padding-box,
-              linear-gradient(24deg,
-        rgba(110, 18, 150, 1)0%,
-        rgba(29, 110, 153, 1) 50%,
-        rgba(9, 158, 32, 1) 100%) border-box;
+                linear-gradient(24deg,
+                    rgba(110, 18, 150, 1) 0%,
+                    rgba(29, 110, 153, 1) 50%,
+                    rgba(9, 158, 32, 1) 100%) border-box;
+
     border-radius: 20px;
     border: 14px solid transparent;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -62,17 +112,28 @@ body {
 
 .playlist {
     width: 500px;
-    height: 320px;
+    height: 350px;
     background-color: plum;
     text-align: center;
 }
 
+#apple {
+    background-color: rgba(110, 18, 150, 1);
+}
 
+#youtube {
+    background-color: rgba(29, 110, 153, 1);
+}
+
+#amazon {
+    background-color: rgba(9, 158, 32, 1);
+}
 
 @font-face {
     font-family: Swash;
     src: url(Swash.ttf);
 }
+
 
 h1 {
     font-family: Swash;
@@ -85,30 +146,18 @@ h2 {
     display: inline-block;
 }
 
-input {
-    font-family: Overlock;
-    font-size: 20px;
-    padding-left: 15px;
-    border-radius: 27px;
-    height: 40px;
-    width: 300px;
-}
-
-button {
-    font-family: Overlock;
-    font-size: 20px;
-    padding-left: 5px;
-    border-radius: 27px;
-    height: 40px;
-    width: 75px;
-    background-color: white;
-    border: none;
-}
-
 p {
     font-family: Overlock;
 }
 
+button {
+    border: none;
+    border-radius: 20px;
+    font-family: Overlock;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
 
 a {
     font-family: Overlock;
