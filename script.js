@@ -4,4 +4,8 @@ function search() {
     if (input === 'happy') {
         window.location.href = "happy.html"
     }
+
+    else {
+        alert('Mood not recognised');
+    }
 }
