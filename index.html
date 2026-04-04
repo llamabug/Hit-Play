@@ -9,7 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body style="background: linear-gradient(24deg,
+        rgba(110, 18, 150, 1)0%,
+        rgba(29, 110, 153, 1) 50%,
+        rgba(9, 158, 32, 1) 100%);;">
     <div class="body">
         <div class="carouselDiv">
         <div class="carousel">
@@ -18,7 +21,7 @@
     </div>
         <h1>Hit Play!</h1>
         <input type="text" id="search" placeholder="Enter your mood">
-        <button id="go"><img src="search.png" style="height: 20px; width: 20px;"></button>
+        <button id="go" onclick="search()"><img src="search.png" style="height: 35px; width: 35px;"></button>
         <br><br>
         <p>© Llamabug 2026 </p>
         <div class="carouselDiv">
@@ -27,6 +30,7 @@
         </div>
     </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
