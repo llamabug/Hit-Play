@@ -89,10 +89,8 @@ input:focus {
     height: 30px;
 }
 
-.searchB :hover {
-
-    opacity: 0.5;
-    background-color: darksalmon;
+.searchB:hover {
+    opacity: 0.75;
 }
 
 .row {
@@ -127,6 +125,16 @@ input:focus {
     background-color: plum;
     text-align: center;
     border-radius: 20px;
+}
+
+#apple, #youtube, #amazon {
+    font-size: 17px;
+    height: auto;
+    width: auto;
+    padding-left: 8px;
+    padding-right: 10px;
+    border-radius: 25px;
+    color: white;
 }
 
 #apple {
@@ -170,7 +178,7 @@ button {
     cursor: pointer;
 }
 
-button :hover {
+button:hover {
     opacity: 0.5;
 }
 
